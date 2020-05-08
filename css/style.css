@@ -63,6 +63,15 @@ header{
     height: 64px;
     /* background-color: ; */
 }
+
+/* Aside */
+
+.byte{
+    color: #ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+
 @media (min-width: 700px) and (max-width: 870px){
     .header{
         padding: 40px 50px;

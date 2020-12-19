@@ -1,0 +1,131 @@
+body {
+	background: #050505 !important;
+	color: #ffffff !important;
+}
+/* Header */
+nav {
+	height: 100px !important;
+	transition: .3s;
+}
+header img{
+	width: 100%;
+}
+
+.nav-scroll {
+	background: rgba(0, 0, 0, .75);
+}
+
+/* Меню nav */
+
+.navbar-brand {
+	font-family: Laila;
+	font-style: normal;
+	font-size: 25px !important;
+}
+
+.nav-link {
+	font-family: Laila;
+	font-style: normal;
+	font-size: 25px;
+	margin-right: 10px;
+	border-color: #000000;
+	border-radius: 0;
+	color: #000000;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	-webkit-transition: color 150ms ease-in-out;
+	transition: color 150ms ease-in-out;
+}
+
+.nav-link:after {
+	content: '';
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	width: 0;
+	height: 100%;
+	background: #b91111;
+	z-index: -1;
+	-webkit-transition: width 150ms ease-in-out;
+	transition: width 150ms ease-in-out;
+}
+
+.nav-link:hover {
+	color: #000000 !important;
+	transition: .5s;
+	border-radius: 3px;
+}
+
+.nav-link:hover:after {
+	width: 110%;
+}
+
+/* body */
+.space {
+	display: block;
+	width: 100%;
+	height: 90px;
+}
+section{
+	background: #000000;
+	/* padding-top: 80px;
+	padding-bottom: 80px; */
+	padding: 80px 40px 80px 40px;
+}
+/* footer */
+.social a{
+	color: #b91111;
+}
+.social a:hover{
+	text-decoration: none;
+}
+footer{
+	padding-top: 30px;
+	background: #000000;
+	display: grid !important;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-areas: "info info social social banner banner";
+	justify-items: center;
+	grid-row-gap: 15px;
+}
+@media screen and (max-device-width: 1200px) {
+	footer{
+		grid-template-areas: 
+		". info info social social ."
+		". . banner banner . .";
+	}
+}
+@media screen and (max-device-width: 530px){
+	footer{
+		grid-template-areas: 
+		". info info info info ."
+		". social social social social .";
+	}
+	.info{
+		justify-self: center;
+	}
+	.banner{
+		display: none;
+	}
+}
+.info{
+ grid-area: info;
+}
+
+.social{
+	text-align: center;
+	grid-area: social;
+}
+
+.banner{
+	grid-area: banner;
+	height: 130px;
+}
+.banner img{
+	width: 500px;
+	height: auto;
+}

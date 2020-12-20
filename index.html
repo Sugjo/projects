@@ -1,20 +1,165 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <title>Проекты</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+		integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="shortcut icon" href="./img/ico.svg" type="image/x-icon">
+	<title>Cats</title>
 </head>
-<body class="page__body">
-    <header class="header">
-        <div class="logo"></div>
-        <div class="name">Проекты Sugjo</div>
-        <div class="links"></div>
-    </header>
-    <aside>
-        <H1 class="byte">Москва тоже не сразу строилась!</H1>
-    </aside>
+
+<body>
+	<!-- Навбар -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<a class="navbar-brand" href="#">
+			<img src="./img/ico.svg" width="30" height="30" alt="" class="d-inline-block align-top">
+			<span>Cats</span>
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+			aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse offsets md justify-content-end" id="navbarNavDropdown">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#race">Породы</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#care">Уход</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#training">Воспитание</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link" href="#contact">Связаться</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<header>
+		<img src="./img/header_bg1.png" alt="">
+	</header>
+
+	<article>
+		<div class="space" id="race"></div>
+		<section>
+			<div class="container">
+				<h2>Породы</h2><br>
+				<div class="row">
+					<div class="col-xl-4 col-lg-4 col-md-12 align-items-stretch d-flex">
+						<div class="card">
+							<img src="https://cattish.ru/wp-content/uploads/2018/04/mc-1-678x509.jpg"
+								class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5>Мейн-кун</h5><br>
+								<p class="card-text">Одной из самых удивительных и загадочных пород считается мейн-кун –
+									ласковый гигант с серьезным взглядом. Этих созданий называют «комнатными рысями»,
+									что неудивительно, т.к. они одни из самых крупных домашних кошек.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 align-items-stretch d-flex">
+						<div class="card">
+							<img src="https://cattish.ru/wp-content/uploads/2018/04/bengal-3-678x509.jpg"
+								class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5>Бенгальская кошка</h5><br>
+								<p class="card-text">Бенгальские кошки – невероятно красивые животные, которые сочетают
+									в себе эффектную внешность диких хищников и покладистый характер домашних питомцев.
+									Ну а главной «фишкой» этих созданий является «леопардовый окрас», за что их и зовут
+									«домашними леопардами».</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-6 align-items-stretch d-flex">
+						<div class="card">
+							<img src="https://cattish.ru/wp-content/uploads/2018/06/siamese-tmb-678x509.jpg"
+								class="card-img-top" alt="...">
+							<div class="card-body">
+								<h5>Сиамская кошка</h5><br>
+								<p class="card-text">Сиамы – грациозные восточные красавцы и красавицы (сумевшие
+									сохранить свои корни практически в первозданном виде) выделяются особым изяществом,
+									темпераментным характером и некой миниатюрностью.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="space" id="care"></div>
+		<section>
+			<div class="container">
+				<h2>Уход</h2><br>
+				<p>Уход за домашней кошкой заключается в поддержке ее тела в частоте, чтобы оно выглядело здоровым и
+					красивым. Также особое внимание стоит уделить питанию, оно должно быть сбалансированным, содержать
+					все необходимые витамины, полезные вещества. Но все же стоит рассмотреть подробную информацию по
+					уходу за животным.</p>
+			</div>
+		</section>
+		<div class="space" id="training"></div>
+		<section>
+			<div class="container">
+				<h2>Воспитание</h2><br>
+				<p>Малыш должен научиться жить в ритме нового дома. Чтобы он никого не будил ночью, стоит активно
+					поиграть с ним перед сном. Если котенок поднимает домочадцев рано утром, не надо обращать на его
+					крики внимания — тогда он быстро отучится от плохой привычки.</p>
+			</div>
+		</section>
+		<div class="space" id="contact"></div>
+		<section>
+			<div class="container">
+				<h2>Связаться</h2><br>
+				<form>
+					<div class="form-row">
+						<div class="form-group col-md">
+							<label for="inputEmail4">Email</label>
+							<input type="email" class="form-control" id="inputEmail4" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md">
+							<label for="exampleFormControlTextarea1">Сообщение</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+								required></textarea>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-primary">Отправить</button>
+				</form>
+			</div>
+		</section>
+		<div class="space"></div>
+	</article>
+
+	<footer>
+
+		<div class="info">
+			Ахмедееа Илия<br>
+			Укртб 9ИСП-32-18
+			<br><br>
+			© Все права защищены 2020
+		</div>
+		<div class="social">
+			<h5>Наши Социальные сети:</h5>
+			<a href="">Instagramm</a><br>
+			<a href="">VK</a><br>
+			<a href="">YouTube</a>
+		</div>
+		<div class="banner">
+			<h5>Наши партнёры:</h5>
+			<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+				<img src="./img/banner.png" alt="">
+			</a>
+		</div>
+	</footer>
+	<script src="./jquery-3.5.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+		crossorigin="anonymous"></script>
+	<script src="./main.js"></script>
 </body>
+
 </html>
